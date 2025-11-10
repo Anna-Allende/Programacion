@@ -1,0 +1,25 @@
+class Pelicula:
+    def __init__ (self, id_pelicula, titulo, director, anio_lanzamiento, duracion_min, precio):
+        self.id_pelicula=id_pelicula
+        self.__titulo=titulo
+        self.__director=director
+        self.__anio_lanzamiento=anio_lanzamiento
+        self.__duracion_min=duracion_min
+        self.__precio=precio
+
+    def mostrar_detalles():
+        print(self.id_pelicula, self.__titulo, self.__director, self.__anio_lanzamiento, self.__duracion_min, self.__precio)
+
+    def calcular_precio_alquiler():
+        tipo=input("Selecciona el tipo de película que desea alquilar \n 1- Acción \n 2- Comedia \n 3- Documental \n")
+        if tipo=="1":
+            pelicula=input("Las peliculas de acción tienen un precio premium. \n Ingrese el id de la película de acción que desea: \n 1- Matrix \n 2- Duro de matar \n 3- John Wick 4 \n")
+
+        elif tipo=="2":
+            pelicula=input("Las peliculas de comedia tienen un 25 por ciento de descuento. \n Ingrese el id de la película de comedia que desea: \n 1- Resacón en Las Vegas \n 2- Son como niños \n 3- Superband \n")
+
+        elif tipo=="3":
+            pelicula=input("Los documentales son gratuitos por 24 horas. \n Ingrese el id del documental que desea: \n 1- Searching for Sugarman \n 2- Blackfish \n 3- Bowling for Columbine \n")
+
+        else:
+            print("La opción es incorrecta.")
