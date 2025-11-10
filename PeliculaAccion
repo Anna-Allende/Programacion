@@ -1,0 +1,7 @@
+import Pelicula from Pelicula
+
+class PeliculaAccion(Pelicula):
+    def __init__ (self, id_pelicula, titulo, director, anio_lanzamiento, duracion_min, niveldeintensidad, protagonista):
+        super().__init__(self, id_pelicula, titulo, director, anio_lanzamiento, duracion_min)
+        self.niveldeintensidad=niveldeintensidad
+        self.protagonista=protagonista
